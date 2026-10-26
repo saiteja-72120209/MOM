@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "SMA — Shape Memory Alloy Precision Temperature Calibration & Phase Kinetics Web Application",
   "scripts": {
-    "dev": "npm run dev --prefix frontend",
+    "dev": "concurrently -k -n backend,frontend \"npm run server\" \"npm run client\"",
     "client": "npm run dev --prefix frontend",
     "server": "node backend/server.js",
+    "build": "npm run build --prefix frontend",
     "build:client": "npm run build --prefix frontend"
   },
   "keywords": [
@@ -19,6 +20,7 @@
   "author": "Gutti Saiteja",
   "license": "MIT",
   "devDependencies": {
+    "concurrently": "^9.2.5",
     "vite": "^8.3.5"
   }
 }
