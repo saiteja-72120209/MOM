@@ -1,0 +1,24 @@
+{
+  "name": "sma-shape-memory-alloy",
+  "version": "1.0.0",
+  "description": "SMA — Shape Memory Alloy Precision Temperature Calibration & Phase Kinetics Web Application",
+  "scripts": {
+    "dev": "npm run dev --prefix frontend",
+    "client": "npm run dev --prefix frontend",
+    "server": "node backend/server.js",
+    "build:client": "npm run build --prefix frontend"
+  },
+  "keywords": [
+    "shape-memory-alloy",
+    "nitinol",
+    "temperature-calibration",
+    "react",
+    "threejs",
+    "express"
+  ],
+  "author": "Gutti Saiteja",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^8.3.5"
+  }
+}
